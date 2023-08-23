@@ -168,13 +168,13 @@ else {
 },[data])
   return (
     <>
-    <Box display={'flex'}  alignItems={'center'} justifyContent={'flex-start'}  margin={'auto'} flexDirection={'row'}>
+    <Box display={'flex'}  alignItems={'center'} justifyContent={'flex-start'}  margin={'auto'} flexDirection={window.innerWidth<900?'column':'row'}>
     <Box display={'flex'}  alignItems={'center'} margin={'auto'}>
       <Typography style={{fontSize:50,textTransform:'none',fontWeight:'bolder',color:'darkgoldenrod',fontFamily:'cursive'}}>Tic</Typography>
     </Box>
     
-      <Box display={'flex'}  alignItems={'center'} minHeight={'100vh'}  maxWidth={600} margin={'auto'}>
-      <Grid container spacing={{ xs: 1, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} justifyContent={'center'} alignItems={'center'}>
+      <Box display={'flex'}  alignItems={'center'} minHeight={'100vh'}  maxWidth={window.innerWidth<900?400:600} margin={'auto'}>
+      <Grid container  justifyContent={'center'} alignItems={'center'}>
       {data.map((item,index) =>(
           <Grid item  xs={2} sm={4} md={4} key={index}  borderLeft={index === 0||index ===3||index ===6 ? 0:1} borderTop={index === 0|1|2 ? 0:1} borderBottom={index === 6|| index===7||index===8 ? 0:1} borderRight={index === 2|5|8 ? 0:1} style={{paddingLeft:0,paddingTop:0}}>
             <div style={{ display:'flex' ,alignItems: 'center', justifyContent: 'center' , margin:10}}>
@@ -183,7 +183,7 @@ else {
         alt={item.desc}
         loading="eager"
         onClick={() => displayNum(index)}
-        style={{width:150,height:150,alignContent:'center',backgroundColor:'white'}}
+        style={{width:window.innerWidth<900?100:150,height:window.innerWidth<900?100:150,alignContent:'center',backgroundColor:'white'}}
       />
 </div>
           </Grid>   
@@ -191,7 +191,7 @@ else {
       </Grid>
   
     </Box>
-    <Box display={'flex'}  alignItems={'center'} margin={'auto'} flexDirection={'column'}>
+    <Box display={'flex'}  alignItems={'center'} margin={'auto'} flexDirection={window.innerWidth<900?'row':'column'}>
       <Typography style={{fontSize:50,textTransform:'none',fontWeight:'bolder',color:'darkgoldenrod',fontFamily:'cursive'}}>Tac</Typography>
       <Typography style={{fontSize:50,textTransform:'none',fontWeight:'bolder',color:'darkgoldenrod',fontFamily:'cursive'}}>Toe</Typography>
     </Box>
