@@ -87,7 +87,7 @@ function App() {
 
 React.useEffect(() => {
 if((data[0].desc === 'multiply.png' && data[4].desc === 'multiply.png' && data[8].desc === 'multiply.png' )|| (data[0].desc === 'circle.png' && data[4].desc === 'circle.png' && data[8].desc === 'circle.png')) {
-setWin('drawLineReverse');
+setWin(window.innerWidth<900?'drawLineReverse900':'drawLineReverse');
 if(data[0].desc === 'multiply.png' && data[4].desc === 'multiply.png' && data[8].desc === 'multiply.png'){
   setShowCardP2(true);
 }
@@ -97,7 +97,7 @@ else {
 
 }
 else if((data[2].desc === 'multiply.png' && data[4].desc === 'multiply.png' && data[6].desc === 'multiply.png' )|| (data[2].desc === 'circle.png' && data[4].desc === 'circle.png' && data[6].desc === 'circle.png')){
-  setWin('drawLineNew');
+  setWin(window.innerWidth<900?'drawLineNew900':'drawLineNew');
   if(data[2].desc === 'multiply.png' && data[4].desc === 'multiply.png' && data[6].desc === 'multiply.png'){
     setShowCardP2(true);
   }
@@ -106,7 +106,7 @@ else if((data[2].desc === 'multiply.png' && data[4].desc === 'multiply.png' && d
   }
 }
 else if((data[0].desc === 'multiply.png' && data[3].desc === 'multiply.png' && data[6].desc === 'multiply.png' )|| (data[0].desc === 'circle.png' && data[3].desc === 'circle.png' && data[6].desc === 'circle.png')){
-  setWin('drawLine2');
+  setWin(window.innerWidth<900?'drawLine2900':'drawLine2');
   if(data[0].desc === 'multiply.png' && data[3].desc === 'multiply.png' && data[6].desc === 'multiply.png'){
     setShowCardP2(true);
   }
@@ -115,7 +115,7 @@ else if((data[0].desc === 'multiply.png' && data[3].desc === 'multiply.png' && d
   }
 }
 else if((data[1].desc === 'multiply.png' && data[4].desc === 'multiply.png' && data[7].desc === 'multiply.png' )|| (data[1].desc === 'circle.png' && data[4].desc === 'circle.png' && data[7].desc === 'circle.png')){
-  setWin('drawLine1');
+  setWin(window.innerWidth<900?'drawLine1900':'drawLine1');
   if(data[1].desc === 'multiply.png' && data[4].desc === 'multiply.png' && data[7].desc === 'multiply.png'){
     setShowCardP2(true);
   }
@@ -124,7 +124,7 @@ else if((data[1].desc === 'multiply.png' && data[4].desc === 'multiply.png' && d
   }
 }
 else if((data[2].desc === 'multiply.png' && data[5].desc === 'multiply.png' && data[8].desc === 'multiply.png' )|| (data[2].desc === 'circle.png' && data[5].desc === 'circle.png' && data[8].desc === 'circle.png')){
-  setWin('drawLine3');
+  setWin(window.innerWidth<900?'drawLine3900':'drawLine3');
   if(data[2].desc === 'multiply.png' && data[5].desc === 'multiply.png' && data[8].desc === 'multiply.png'){
     setShowCardP2(true);
   }
@@ -133,7 +133,7 @@ else if((data[2].desc === 'multiply.png' && data[5].desc === 'multiply.png' && d
   }
 }
 else if((data[0].desc === 'multiply.png' && data[1].desc === 'multiply.png' && data[2].desc === 'multiply.png' )|| (data[0].desc === 'circle.png' && data[1].desc === 'circle.png' && data[2].desc === 'circle.png')){
-  setWin('drawLine4');
+  setWin(window.innerWidth<900?'drawLine4900':'drawLine4');
   if(data[0].desc === 'multiply.png' && data[1].desc === 'multiply.png' && data[2].desc === 'multiply.png'){
     setShowCardP2(true);
   }
@@ -142,7 +142,7 @@ else if((data[0].desc === 'multiply.png' && data[1].desc === 'multiply.png' && d
   }
 }
 else if((data[3].desc === 'multiply.png' && data[4].desc === 'multiply.png' && data[5].desc === 'multiply.png' )|| (data[3].desc === 'circle.png' && data[4].desc === 'circle.png' && data[5].desc === 'circle.png')){
-  setWin('drawLine5');
+  setWin(window.innerWidth<900?'drawLine5900':'drawLine5');
   if(data[3].desc === 'multiply.png' && data[4].desc === 'multiply.png' && data[5].desc === 'multiply.png'){
     setShowCardP2(true);
   }
@@ -151,7 +151,7 @@ else if((data[3].desc === 'multiply.png' && data[4].desc === 'multiply.png' && d
   }
 }
 else if((data[6].desc === 'multiply.png' && data[7].desc === 'multiply.png' && data[8].desc === 'multiply.png' )|| (data[6].desc === 'circle.png' && data[7].desc === 'circle.png' && data[8].desc === 'circle.png')){
-  setWin('drawLine6');
+  setWin(window.innerWidth<900?'drawLine6900':'drawLine6');
   if(data[6].desc === 'multiply.png' && data[7].desc === 'multiply.png' && data[8].desc === 'multiply.png' ){
     setShowCardP2(true);
   }
@@ -183,7 +183,7 @@ else {
         alt={item.desc}
         loading="eager"
         onClick={() => displayNum(index)}
-        style={{width:window.innerWidth<900?100:150,height:window.innerWidth<900?100:150,alignContent:'center',backgroundColor:'white'}}
+        style={{width:window.innerWidth<900?75:150,height:window.innerWidth<900?75:150,padding:5,alignContent:'center',backgroundColor:'white'}}
       />
 </div>
           </Grid>   
@@ -216,7 +216,7 @@ else {
       </Card> }
       {draw &&<Card sx={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', bgcolor: 'rgba(0, 0, 0, 0.5)', zIndex: 9999 }}>
       <div style={{color:'white', fontSize:100,display:'flex', justifyContent:'center', alignItems:'center', margin:'auto', minHeight:'100vh', flexDirection:'column'}}>
-<Typography style={{color:'white', fontSize:100}}>Draw Match</Typography>
+<Typography style={{color:'white', fontSize:window.innerWidth<900?50:100}}>Draw Match</Typography>
 
 <Button  size='small' style={{color:'white', fontSize:window.innerWidth<900?25:50,textTransform:'none'}} disableRipple onClick={resetPlay}><Icon style={{fontSize:window.innerWidth<900?25:50}}>rotate_right</Icon>Play again</Button>
 </div>
