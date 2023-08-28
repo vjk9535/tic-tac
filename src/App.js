@@ -173,11 +173,11 @@ else {
       <Typography style={{fontSize:50,textTransform:'none',fontWeight:'bolder',color:'darkgoldenrod',fontFamily:'cursive'}}>Tic</Typography>
     </Box>
     
-      <Box display={'flex'}  alignItems={'center'} minHeight={'100vh'}  maxWidth={window.innerWidth<900?400:600} margin={'auto'}>
+      <Box display={'flex'}  alignItems={'center'} minHeight={window.innerWidth<900?'50vh':'100vh'}  maxWidth={window.innerWidth<900?400:600} margin={'auto'}>
       <Grid container  justifyContent={'center'} alignItems={'center'}>
       {data.map((item,index) =>(
           <Grid item  xs={4} sm={4} md={4} key={index}  borderLeft={index === 0||index ===3||index ===6 ? 0:1} borderTop={index === 0|1|2 ? 0:1} borderBottom={index === 6|| index===7||index===8 ? 0:1} borderRight={index === 2|5|8 ? 0:1} style={{paddingLeft:0,paddingTop:0}}>
-            <div style={{ display:'flex' ,alignItems: 'center', justifyContent: 'center' , margin:10}}>
+            <div style={{ display:'flex' ,alignItems: 'center', justifyContent: 'center' , margin:window.innerWidth<900?0:10}}>
       <img
         src={item.desc===''?'blank.png':item.desc}
         alt={item.desc}
