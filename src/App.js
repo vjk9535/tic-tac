@@ -176,7 +176,7 @@ else {
       <Box display={'flex'}  alignItems={'center'} minHeight={'100vh'}  maxWidth={window.innerWidth<900?400:600} margin={'auto'}>
       <Grid container  justifyContent={'center'} alignItems={'center'}>
       {data.map((item,index) =>(
-          <Grid item  xs={2} sm={4} md={4} key={index}  borderLeft={index === 0||index ===3||index ===6 ? 0:1} borderTop={index === 0|1|2 ? 0:1} borderBottom={index === 6|| index===7||index===8 ? 0:1} borderRight={index === 2|5|8 ? 0:1} style={{paddingLeft:0,paddingTop:0}}>
+          <Grid item  xs={4} sm={4} md={4} key={index}  borderLeft={index === 0||index ===3||index ===6 ? 0:1} borderTop={index === 0|1|2 ? 0:1} borderBottom={index === 6|| index===7||index===8 ? 0:1} borderRight={index === 2|5|8 ? 0:1} style={{paddingLeft:0,paddingTop:0}}>
             <div style={{ display:'flex' ,alignItems: 'center', justifyContent: 'center' , margin:10}}>
       <img
         src={item.desc===''?'blank.png':item.desc}
@@ -202,23 +202,23 @@ else {
       <span className={win}></span>
       {showCardP1 &&(<Card sx={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', bgcolor: 'rgba(0, 0, 0, 0.5)', zIndex: 9999 }}>
 <div style={{color:'white', fontSize:100,display:'flex', justifyContent:'center', alignItems:'center', margin:'auto', minHeight:'100vh', flexDirection:'column'}}>
-<Typography style={{color:'white', fontSize:100}}>Player 1 Wins!!!</Typography>
+<Typography style={{color:'white', fontSize:window.innerWidth<900?50:100}}>Player 1 Wins!!!</Typography>
 
-<Button  size='small' style={{color:'white', fontSize:50,textTransform:'none'}} disableRipple onClick={resetPlay}><Icon style={{fontSize:50}}>rotate_right</Icon>Play again</Button>
+<Button  size='small' style={{color:'white', fontSize:window.innerWidth<900?25:50,textTransform:'none'}} disableRipple onClick={resetPlay}><Icon style={{fontSize:window.innerWidth<900?25:50}}>rotate_right</Icon>Play again</Button>
 </div>
       </Card> )}
       {showCardP2 &&<Card sx={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', bgcolor: 'rgba(0, 0, 0, 0.5)', zIndex: 9999 }}>
       <div style={{color:'white', fontSize:100,display:'flex', justifyContent:'center', alignItems:'center', margin:'auto', minHeight:'100vh', flexDirection:'column'}}>
-<Typography style={{color:'white', fontSize:100}}>Player 2 Wins!!!</Typography>
+<Typography style={{color:'white', fontSize:window.innerWidth<900?50:100}}>Player 2 Wins!!!</Typography>
 
-<Button  size='small' style={{color:'white', fontSize:50,textTransform:'none'}} disableRipple onClick={resetPlay}><Icon style={{fontSize:50}}>rotate_right</Icon>Play again</Button>
+<Button  size='small' style={{color:'white', fontSize:window.innerWidth<900?25:50,textTransform:'none'}} disableRipple onClick={resetPlay}><Icon style={{fontSize:window.innerWidth<900?25:50}}>rotate_right</Icon>Play again</Button>
 </div>
       </Card> }
       {draw &&<Card sx={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', bgcolor: 'rgba(0, 0, 0, 0.5)', zIndex: 9999 }}>
       <div style={{color:'white', fontSize:100,display:'flex', justifyContent:'center', alignItems:'center', margin:'auto', minHeight:'100vh', flexDirection:'column'}}>
 <Typography style={{color:'white', fontSize:100}}>Draw Match</Typography>
 
-<Button  size='small' style={{color:'white', fontSize:50,textTransform:'none'}} disableRipple onClick={resetPlay}><Icon style={{fontSize:50}}>rotate_right</Icon>Play again</Button>
+<Button  size='small' style={{color:'white', fontSize:window.innerWidth<900?25:50,textTransform:'none'}} disableRipple onClick={resetPlay}><Icon style={{fontSize:window.innerWidth<900?25:50}}>rotate_right</Icon>Play again</Button>
 </div>
       </Card> }
       </>
