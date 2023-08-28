@@ -90,13 +90,13 @@
  position: absolute;
  left: 52%;
  bottom: 0;
- transform: translate(-16px,-333px);
+ transform: translate(-12px,-340px);
  animation: mymove1900 5s ease-in;
 }
 
 @keyframes mymove1900 {
-  from {  transform: translate(-16px,-333px);z-index: 1;height: 0%}
-  to { transform:  translate(-16px,-333x);z-index: 1;height: 32%;}
+  from {  transform: translate(-12px,-340px);z-index: 1;height: 0%}
+  to { transform:  translate(-12px,-340x);z-index: 1;height: 32%;}
 }
 
 /* For (0,3,6) */
@@ -158,13 +158,13 @@
  position: absolute;
  left: 66%;
  bottom: 0;
- transform: translate(66px,-333px);
+ transform: translate(66px,-340px);
  animation: mymove3900 5s ease-in;
 }
 
 @keyframes mymove3900 {
-  from {  transform: translate(66px,-333px);z-index: 1;height: 0%}
-  to { transform:  translate(66px,-333px);z-index: 1;height: 32%;}
+  from {  transform: translate(66px,-340px);z-index: 1;height: 0%}
+  to { transform:  translate(66px,-340px);z-index: 1;height: 32%;}
 }
 
 /* For (0,1,2) */
