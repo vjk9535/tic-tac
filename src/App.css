@@ -195,12 +195,12 @@
  left: 28%;
  bottom: 0;
   animation: mymove4900 5s ease-in;
-  transform:  rotate(90deg) translate(-202px,-50px);
+  transform:  rotate(90deg) translate(-202px,-20px);
 }
 
 @keyframes mymove4900 {
   from {  transform: rotate(90deg);z-index: 1;height: 0%;top: 24.25%;left: 14%;}
-  to { transform:  rotate(90deg) translate(-200px,-50px);z-index: 1; height: 50%;top: 28%;left: 28%;}
+  to { transform:  rotate(90deg) translate(-200px,-20px);z-index: 1; height: 50%;top: 28%;left: 28%;}
 }
 
 /* For (3,4,5) */
@@ -231,12 +231,12 @@
  top: 28%;
  bottom: 0;
   animation: mymove5900 5s ease-in;
-  transform:  rotate(90deg) translate(-118px,-50px);
+  transform:  rotate(90deg) translate(-118px,-20px);
 }
 
 @keyframes mymove5900 {
   from {  transform: rotate(90deg);z-index: 1;height: 0%;top: 38.5%;left: 14%;}
-  to { transform:  rotate(90deg) translate(-116px,-50px);z-index: 1; height: 50%;top: 28%;left: 28%;}
+  to { transform:  rotate(90deg) translate(-116px,-20px);z-index: 1; height: 50%;top: 28%;left: 28%;}
 }
 
 /* For (6,7,8) */
@@ -267,10 +267,10 @@
  top: 28%;
  bottom: 0;
   animation: mymove6900 5s ease-in;
-  transform:  rotate(90deg) translate(-30px,-50px);
+  transform:  rotate(90deg) translate(-30px,-20px);
 }
 
 @keyframes mymove6900 {
-  from {  transform: rotate(90deg);z-index: 1;height: 0%;top: 45%;left: 14%;}
-  to { transform:  rotate(90deg) translate(-30px,-50px);z-index: 1; height: 50%;top: 28%;left: 28%;}
+  from {  transform: rotate(90deg);z-index: 1;height: 0%;top: 48.95%;left: 14%;}
+  to { transform:  rotate(90deg) translate(-30px,-20px);z-index: 1; height: 50%;top: 28%;left: 28%;}
 }
