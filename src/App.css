@@ -199,7 +199,7 @@
 }
 
 @keyframes mymove4900 {
-  from {  transform: rotate(90deg);z-index: 1;height: 0%;top: 28.25%;left: 4%;}
+  from {  transform: rotate(90deg);z-index: 1;height: 0%;top: 28.4%;left: 4%;}
   to { transform:  rotate(90deg) translate(-200px,-80px);z-index: 1; height: 50%;top: 28%;left: 28%;}
 }
 
@@ -235,7 +235,7 @@
 }
 
 @keyframes mymove5900 {
-  from {  transform: rotate(90deg);z-index: 1;height: 0%;top: 38.5%;left: 4%;}
+  from {  transform: rotate(90deg);z-index: 1;height: 0%;top: 38.91%;left: 4%;}
   to { transform:  rotate(90deg) translate(-113.8px,-80px);z-index: 1; height: 50%;top: 28%;left: 28%;}
 }
 
