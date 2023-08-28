@@ -119,18 +119,18 @@
 /* if the screen is less than 900 */
 .drawLine2900 {
   width: 0.5%;
- height: 32%;
+ height: 34%;
  background-color: blue;
  position: absolute;
  left: 35%;
  bottom: 0;
- transform: translate(-70px,-350px);
+ transform: translate(-72px,-350px);
  animation: mymove2900 5s ease-in;
 }
 
 @keyframes mymove2900 {
-  from {  transform: translate(-70px,-350px);z-index: 1;height: 0%}
-  to { transform:  translate(-70px,-350px);z-index: 1;height: 32%;}
+  from {  transform: translate(-72px,-350px);z-index: 1;height: 0%}
+  to { transform:  translate(-72px,-350px);z-index: 1;height: 34%;}
 }
 
 /* For (2,5,8) */
