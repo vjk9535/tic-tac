@@ -124,13 +124,13 @@
  position: absolute;
  left: 35%;
  bottom: 0;
- transform: translate(-50px,-410px);
+ transform: translate(-30px,-310px);
  animation: mymove2900 5s ease-in;
 }
 
 @keyframes mymove2900 {
-  from {  transform: translate(-50px,-410px);z-index: 1;height: 0%}
-  to { transform:  translate(-50px,-410px);z-index: 1;height: 32%;}
+  from {  transform: translate(-30px,-310px);z-index: 1;height: 0%}
+  to { transform:  translate(-30px,-310px);z-index: 1;height: 32%;}
 }
 
 /* For (2,5,8) */
