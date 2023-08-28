@@ -23,13 +23,13 @@
  position: absolute;
  left: 50%;
  bottom: 0;
- transform: rotate(57deg) translate(-252px,-160px); 
+ transform: rotate(57deg) translate(-242px,-160px); 
  animation: mymove900 5s ease-in;
 }
 
 @keyframes mymove900 {
-  from {  transform: rotate(57deg) translate(-252px,-170px);z-index: 1;height: 0%; left: 50%;bottom: 25%;}
-  to { transform: rotate(57deg) translate(-252px,-170px);z-index: 1;height: 50%;}
+  from {  transform: rotate(57deg) translate(-242px,-170px);z-index: 1;height: 0%; left: 50%;bottom: 25%;}
+  to { transform: rotate(57deg) translate(-242px,-170px);z-index: 1;height: 50%;}
 }
 
 /* For (0,4,8) */
