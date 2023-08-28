@@ -95,8 +95,8 @@
 }
 
 @keyframes mymove1900 {
-  from {  transform: translate(-10px,-344px);z-index: 1;height: 0%}
-  to { transform:  translate(-10px,-344x);z-index: 1;height: 34%;}
+  from {  transform: translate(-10px,-342px);z-index: 1;height: 0%}
+  to { transform:  translate(-10px,-342x);z-index: 1;height: 34%;}
 }
 
 /* For (0,3,6) */
@@ -163,8 +163,8 @@
 }
 
 @keyframes mymove3900 {
-  from {  transform: translate(66px,-344px);z-index: 1;height: 0%}
-  to { transform:  translate(66px,-344px);z-index: 1;height: 34%;}
+  from {  transform: translate(66px,-342px);z-index: 1;height: 0%}
+  to { transform:  translate(66px,-342px);z-index: 1;height: 34%;}
 }
 
 /* For (0,1,2) */
@@ -195,12 +195,12 @@
  left: 28%;
  bottom: 0;
   animation: mymove4900 5s ease-in;
-  transform:  rotate(90deg) translate(-240px,-120px);
+  transform:  rotate(90deg) translate(-202px,-60px);
 }
 
 @keyframes mymove4900 {
   from {  transform: rotate(90deg);z-index: 1;height: 0%;top: 24.25%;left: 14%;}
-  to { transform:  rotate(90deg) translate(-238px,-120px);z-index: 1; height: 50%;top: 28%;left: 28%;}
+  to { transform:  rotate(90deg) translate(-200px,-60px);z-index: 1; height: 50%;top: 28%;left: 28%;}
 }
 
 /* For (3,4,5) */
@@ -231,12 +231,12 @@
  top: 28%;
  bottom: 0;
   animation: mymove5900 5s ease-in;
-  transform:  rotate(90deg) translate(-155px,-120px);
+  transform:  rotate(90deg) translate(-102px,-60px);
 }
 
 @keyframes mymove5900 {
   from {  transform: rotate(90deg);z-index: 1;height: 0%;top: 34%;left: 14%;}
-  to { transform:  rotate(90deg) translate(-153.8px,-120px);z-index: 1; height: 50%;top: 28%;left: 28%;}
+  to { transform:  rotate(90deg) translate(-100px,-60px);z-index: 1; height: 50%;top: 28%;left: 28%;}
 }
 
 /* For (6,7,8) */
@@ -267,10 +267,10 @@
  top: 28%;
  bottom: 0;
   animation: mymove6900 5s ease-in;
-  transform:  rotate(90deg) translate(-70px,-120px);
+  transform:  rotate(90deg) translate(-20px,-60px);
 }
 
 @keyframes mymove6900 {
   from {  transform: rotate(90deg);z-index: 1;height: 0%;top: 45%;left: 14%;}
-  to { transform:  rotate(90deg) translate(-70.5px,-120px);z-index: 1; height: 50%;top: 28%;left: 28%;}
+  to { transform:  rotate(90deg) translate(-20px,-60px);z-index: 1; height: 50%;top: 28%;left: 28%;}
 }
