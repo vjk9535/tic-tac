@@ -85,18 +85,18 @@
 /* if the screen is less than 900 */
 .drawLine1900 {
   width: 0.5%;
- height: 32%;
+ height: 34%;
  background-color: blue;
  position: absolute;
  left: 52%;
  bottom: 0;
- transform: translate(-12px,-340px);
+ transform: translate(-10px,-344px);
  animation: mymove1900 5s ease-in;
 }
 
 @keyframes mymove1900 {
-  from {  transform: translate(-12px,-340px);z-index: 1;height: 0%}
-  to { transform:  translate(-12px,-340x);z-index: 1;height: 32%;}
+  from {  transform: translate(-10px,-344px);z-index: 1;height: 0%}
+  to { transform:  translate(-10px,-344x);z-index: 1;height: 34%;}
 }
 
 /* For (0,3,6) */
@@ -153,7 +153,7 @@
 /* if the screen is less than 900 */
 .drawLine3900 {
   width: 0.5%;
- height: 32%;
+ height: 34%;
  background-color: blue;
  position: absolute;
  left: 66%;
@@ -163,8 +163,8 @@
 }
 
 @keyframes mymove3900 {
-  from {  transform: translate(66px,-340px);z-index: 1;height: 0%}
-  to { transform:  translate(66px,-340px);z-index: 1;height: 32%;}
+  from {  transform: translate(66px,-344px);z-index: 1;height: 0%}
+  to { transform:  translate(66px,-344px);z-index: 1;height: 34%;}
 }
 
 /* For (0,1,2) */
