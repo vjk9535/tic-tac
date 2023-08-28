@@ -57,13 +57,13 @@
  position: absolute;
  left: 50%;
  bottom: 0;
- transform: rotate(123deg) translate(-260px,160px);
+ transform: rotate(123deg) translate(-200px,160px);
  animation: mymoveReverse900 5s ease-in;
 }
 
 @keyframes mymoveReverse900 {
-  from {  transform: rotate(123deg) translate(-260px,160px);z-index: 1;height: 0%; left: 50%;bottom: 25%;}
-  to { transform: rotate(123deg) translate(-260px,160px);z-index: 1;height: 50%;}
+  from {  transform: rotate(123deg) translate(-200px,160px);z-index: 1;height: 0%; left: 50%;bottom: 25%;}
+  to { transform: rotate(123deg) translate(-200px,160px);z-index: 1;height: 50%;}
 }
 
 /* For (1,4,7) */
